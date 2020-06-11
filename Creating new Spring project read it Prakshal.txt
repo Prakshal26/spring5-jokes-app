@@ -1,0 +1,44 @@
+Step 1: Crete a git repo
+clone it using git bash
+
+2: Now create new project in inteelij select spring.io project
+it will give various options to slectt
+chose web app
+tymleaf for templates
+sql,h2 data bases
+etc etc
+
+Now it will ask the directory where to create this project. Select the same directory where we have did clone as it will automatically link
+this project to git.
+TIll now git will just have readme but as soon we will create this project in that direcotyr it will add those files in it.
+now git add
+git commit
+git push.
+
+
+3: Start your project by building maven dependencies
+Goto: https://mvnrepository.com/artifact/guru.springframework/chuck-norris-for-actuator/0.0.2
+
+In Maven tab copy: 
+<!-- https://mvnrepository.com/artifact/guru.springframework/chuck-norris-for-actuator -->
+<dependency>
+    <groupId>guru.springframework</groupId>
+    <artifactId>chuck-norris-for-actuator</artifactId>
+    <version>0.0.2</version>
+</dependency>
+
+Put this is pom.xml between any dependecy tag.
+
+So what is really a maven dependency:
+Chuck Norris for Actuator is a Spring application that JT has created and published to Maven central. 
+The app for the purpose of demo, returns a random Joke as a string. 
+In the video, we are using the Chuck Norris app as a dependency of our Joke application. 
+The video demonstrates how we add the Chuck Norris app as a Maven dependency to our Joke application, and then use it from a service class of the application.
+
+
+Step4 :
+As we have imported Maven dependecnty and role of that was to return any random joke.
+Now we will create a service in our project. I.e how we will get a joke i,e service to get a joke
+
+This has a class and which has method which will give us jokes.
+We can now easily create its object and get the joke.
