@@ -1,0 +1,16 @@
+<!-- We have given this file as chucknorris as controller is retruning chucknorris i.e this
+  html file. -->
+<!DOCTYPE html>
+<!--We have given xmlns as thymelaf so that it takes template from there-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Jokes</title>
+</head>
+<body>
+<h1>Chuck Norris Jokes</h1>
+<!-- In controller we have given attribute name as joke so it will go there and in place of
+ "Insert Joke Here !" it will put the things return by that controller-->
+<p th:text="${joke}">Insert Joke Here !</p>
+</body>
+</html>
